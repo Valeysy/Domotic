@@ -120,7 +120,7 @@ class MQTTManager: NSObject, ObservableObject {
             subscribe(topic: "sae301/led")
             subscribe(topic: "sae301_2/led")
             subscribe(topic: "sae301/temperature")
-            subscribe(topic: "sae301/alert")
+            subscribe(topic: "sae301/temperature/status")
         } else {
             print("Erreur de connexion: \(ack)")
             isConnected = false
@@ -159,9 +159,11 @@ class MQTTManager: NSObject, ObservableObject {
                         self.isLED2On = false
                         self.sendNotification(title: "Prise 2", body: "La prise 2 est éteinte.")
                     }
-                } else if message.topic == "sae301/alert" {
+                }
+                
+                if message.topic == "sae301/temperature/status" {
                     // Gestion des alertes depuis l'ESP (alertes de température)
-                    if payload == "temperature_high" {
+                    if payload.contains("Température élevée") {
                         self.sendTemperatureAlert()
                     }
                 }

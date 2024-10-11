@@ -21,7 +21,7 @@ class NotificationManager: NSObject {
         content.sound = UNNotificationSound.default
 
         // Créer un déclencheur immédiat
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0, repeats: false)
 
         // Créer la requête
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
@@ -36,3 +36,5 @@ class NotificationManager: NSObject {
         }
     }
 }
+
+

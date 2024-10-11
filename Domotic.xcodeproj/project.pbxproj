@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E707BAE62CB3BD3D007888A2 /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = E707BAE52CB3BD3D007888A2 /* CocoaMQTT */; };
+		E75E9DB82CB90DC2004CF3D5 /* ColorfulX in Frameworks */ = {isa = PBXBuildFile; productRef = E75E9DB72CB90DC2004CF3D5 /* ColorfulX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E707BAE62CB3BD3D007888A2 /* CocoaMQTT in Frameworks */,
+				E75E9DB82CB90DC2004CF3D5 /* ColorfulX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +120,7 @@
 			name = Domotic;
 			packageProductDependencies = (
 				E707BAE52CB3BD3D007888A2 /* CocoaMQTT */,
+				E75E9DB72CB90DC2004CF3D5 /* ColorfulX */,
 			);
 			productName = Domotic;
 			productReference = E707BAB42CB3BAD1007888A2 /* Domotic.app */;
@@ -203,6 +206,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				E707BAE42CB3BD3D007888A2 /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+				E75E9DB62CB90DC2004CF3D5 /* XCRemoteSwiftPackageReference "ColorfulX" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E707BAB52CB3BAD1007888A2 /* Products */;
@@ -411,8 +415,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,8 +444,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +581,14 @@
 				minimumVersion = 2.1.8;
 			};
 		};
+		E75E9DB62CB90DC2004CF3D5 /* XCRemoteSwiftPackageReference "ColorfulX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lakr233/ColorfulX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -584,6 +596,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E707BAE42CB3BD3D007888A2 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;
 			productName = CocoaMQTT;
+		};
+		E75E9DB72CB90DC2004CF3D5 /* ColorfulX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E75E9DB62CB90DC2004CF3D5 /* XCRemoteSwiftPackageReference "ColorfulX" */;
+			productName = ColorfulX;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
